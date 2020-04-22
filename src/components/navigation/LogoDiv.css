@@ -1,0 +1,16 @@
+.LogoDiv {
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(0, 0, 0, 1) 40%,
+		rgba(27, 94, 48, 1) 100%
+	);
+}
+
+.LogoDiv img {
+	width: 200px;
+}
