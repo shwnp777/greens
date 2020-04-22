@@ -1,10 +1,11 @@
 import React from 'react';
+import SideBarNav from '../components/navigation/SideBarNav';
 
 const About = () => {
 	return (
-		<div>
-			<h3>This is the About page</h3>
-		</div>
+		<SideBarNav>
+			<h3>Hello About</h3>
+		</SideBarNav>
 	);
 };
 

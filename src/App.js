@@ -1,11 +1,9 @@
 import React from 'react';
-import { Route, Switch, Link, BrowserRouter as Router } from 'react-router-dom';
+import {Route, Switch, BrowserRouter as Router} from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
-
-import './bootstrap.css';
 
 function App() {
 	return (

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Header from '../components/navigation/Header';
+import SideBarNav from '../components/navigation/SideBarNav';
 
 const Home = () => {
 	return (
-		<div>
-			<Header />
-		</div>
+		<SideBarNav>
+			<h3 style={{marginTop: 150}}>This is the Home Page</h3>
+		</SideBarNav>
 	);
 };
 
