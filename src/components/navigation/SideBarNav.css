@@ -1,5 +1,8 @@
 header#navBG {
-	background-color: #181818;
+	background-color: rgb(0, 0, 0);
+	font-family: 'Bebas Neue', cursive;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .MuiSvgIcon-root {
@@ -9,4 +12,37 @@ header#navBG {
 .makeStyles-content-9 {
 	padding-bottom: 0px !important;
 	padding-top: 0px !important;
+}
+
+.list-unstyled {
+	width: 100%;
+	list-style-type: none;
+	padding-left: 0px;
+	margin-top: 20px;
+}
+
+.list-unstyled li {
+	text-decoration: none !important;
+	color: #39a11c;
+	padding: 16px;
+	text-align: center;
+}
+.list-unstyled a li:hover {
+	background-color: #39a11c;
+	color: #000;
+}
+.list-unstyled a li {
+	text-decoration: none !important;
+	width: 100%;
+	color: #39a11c;
+	font-size: 1.1rem;
+}
+
+.main-nav-active li {
+	background-color: rgba(109, 255, 80, 0.445);
+	color: #000000 !important;
+}
+
+.list-unstyled a {
+	text-decoration: none !important;
 }

@@ -1,27 +1,29 @@
 import React from 'react';
 import clsx from 'clsx';
-import {makeStyles, useTheme} from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 import Logo from '../../assets/images/greenslogo.png';
 
 import './SideBarNav.css';
 import MainLayout from '../layout/MainLayout';
 import SideNavList from './SideNavList';
+
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const themes = createMuiTheme({
+	typography: {
+		fontFamily: 'Bebas Neue',
+	},
+});
 
 const drawerWidth = 240;
 
@@ -55,7 +57,9 @@ const useStyles = makeStyles((theme) => ({
 	},
 	drawerPaper: {
 		width: drawerWidth,
-		backgroundColor: '#181818',
+		background: 'rgb(2,0,36)',
+		background:
+			'linear-gradient(180deg, rgba(0,0,0,1) 67%, rgba(57,161,28,1) 96%, rgba(27,94,48,1) 100%)',
 		color: '#39a11c',
 	},
 	drawerHeader: {
@@ -68,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	content: {
 		flexGrow: 1,
-		padding: theme.spacing(3),
+		padding: theme.spacing(0),
 		transition: theme.transitions.create('margin', {
 			easing: theme.transitions.easing.sharp,
 			duration: theme.transitions.duration.leavingScreen,
@@ -84,6 +88,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	navText: {
 		color: '#39a11c',
+		fontSize: '1.5rem',
 	},
 	logo: {
 		width: '180px',
@@ -92,7 +97,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function SideBarNav({children}) {
+export default function SideBarNav({ children }) {
 	const classes = useStyles();
 	const theme = useTheme();
 	const [open, setOpen] = React.useState(false);
@@ -106,49 +111,67 @@ export default function SideBarNav({children}) {
 	};
 
 	return (
-		<div className={classes.root}>
-			<CssBaseline />
-			<AppBar
-				position='fixed'
-				className={clsx(classes.appBar, {
-					[classes.appBarShift]: open,
-				})}
-				id='navBG'
-			>
-				<Toolbar>
-					<IconButton color='inherit' aria-label='open drawer' onClick={handleDrawerOpen} edge='start' className={clsx(classes.menuButton, open && classes.hide)}>
-						<MenuIcon className={classes.navText} />
-					</IconButton>
-					<Typography variant='h6' noWrap className={classes.navText}>
-						Green's Junk Removal
-					</Typography>
-				</Toolbar>
-			</AppBar>
-			<Drawer
-				className={classes.drawer}
-				variant='persistent'
-				anchor='left'
-				open={open}
-				classes={{
-					paper: classes.drawerPaper,
-				}}
-			>
-				<div className={classes.drawerHeader}>
-					<IconButton onClick={handleDrawerClose}>{theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}</IconButton>
-				</div>
-				<Divider />
-				<img src={Logo} className={classes.logo} alt='Greens Junk Removal Logo' />
-				<Divider />
-				<SideNavList />
-			</Drawer>
-			<main
-				className={clsx(classes.content, {
-					[classes.contentShift]: open,
-				})}
-			>
-				<MainLayout>{children}</MainLayout>
-			</main>
-		</div>
+		<MuiThemeProvider theme={themes}>
+			<div className={classes.root}>
+				<CssBaseline />
+				<AppBar
+					position='fixed'
+					className={clsx(classes.appBar, {
+						[classes.appBarShift]: open,
+					})}
+					id='navBG'
+				>
+					<Toolbar>
+						<IconButton
+							color='inherit'
+							aria-label='open drawer'
+							onClick={handleDrawerOpen}
+							edge='start'
+							className={clsx(classes.menuButton, open && classes.hide)}
+						>
+							<MenuIcon className={classes.navText} />
+						</IconButton>
+						<Typography variant='h6' noWrap className={classes.navText}>
+							Green's Junk Removal
+						</Typography>
+					</Toolbar>
+				</AppBar>
+				<Drawer
+					className={classes.drawer}
+					variant='persistent'
+					anchor='left'
+					open={open}
+					classes={{
+						paper: classes.drawerPaper,
+					}}
+				>
+					<div className={classes.drawerHeader}>
+						<IconButton onClick={handleDrawerClose}>
+							{theme.direction === 'ltr' ? (
+								<ChevronLeftIcon />
+							) : (
+								<ChevronRightIcon />
+							)}
+						</IconButton>
+					</div>
+					<Divider />
+					<img
+						src={Logo}
+						className={classes.logo}
+						alt='Greens Junk Removal Logo'
+					/>
+					<Divider />
+					<SideNavList />
+				</Drawer>
+				<main
+					className={clsx(classes.content, {
+						[classes.contentShift]: open,
+					})}
+				>
+					<MainLayout>{children}</MainLayout>
+				</main>
+			</div>
+		</MuiThemeProvider>
 	);
 }
 

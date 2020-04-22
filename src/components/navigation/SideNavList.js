@@ -1,22 +1,31 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
+import './SideBarNav.css';
 
 const SideNavList = () => {
 	return (
 		<div>
 			<ul className='list-unstyled components'>
-				<li className='active'>
-					<Link to='/'>Home</Link>
-				</li>
-				<li>
-					<Link to='/about'>About Us</Link>
-				</li>
-				<li>
-					<Link to='/services'>Services</Link>
-				</li>
-				<li>
-					<Link to='/contact'>Contact Us</Link>
-				</li>
+				<NavLink exact to='/' activeClassName='main-nav-active'>
+					<li>Home</li>
+				</NavLink>
+
+				<NavLink exact to='/about' activeClassName='main-nav-active'>
+					<li>About Us</li>
+				</NavLink>
+
+				<NavLink exact to='/services' activeClassName='main-nav-active'>
+					<li>Services</li>
+				</NavLink>
+
+				<NavLink exact to='/reviews' activeClassName='main-nav-active'>
+					<li>Reviews</li>
+				</NavLink>
+
+				<NavLink exact to='/contact' activeClassName='main-nav-active'>
+					<li>Contact Us</li>
+				</NavLink>
 			</ul>
 		</div>
 	);

@@ -4,7 +4,9 @@ import SideBarNav from '../components/navigation/SideBarNav';
 const About = () => {
 	return (
 		<SideBarNav>
-			<h3>Hello About</h3>
+			<div className='divBody' style={{ paddingTop: '120px' }}>
+				<h3>Hello About</h3>
+			</div>
 		</SideBarNav>
 	);
 };
