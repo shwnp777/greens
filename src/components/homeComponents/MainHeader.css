@@ -1,0 +1,34 @@
+#headerImg {
+	background-image: url('../../assets/images/headerIMG.jpg'); /* The image used */
+	background-color: #cccccc; /* Used if the image is unavailable */
+	height: 500px !important; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	text-align: left;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	.divBody {
+		padding: 50px 0px 0px 0px;
+	}
+
+	#headerH3 {
+		font-size: 2.5rem !important;
+	}
+	#headerH6 {
+		font-size: 1.5rem !important;
+		margin-top: 0px;
+	}
+	#greenGuy {
+		margin-top: 0px;
+	}
+}
+
+@media only screen and (min-width: 864px) {
+	#greenGuyIMG {
+		left: 50% !important;
+		bottom: -12px !important;
+	}
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import {makeStyles, useTheme} from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
@@ -17,7 +17,7 @@ import './SideBarNav.css';
 import MainLayout from '../layout/MainLayout';
 import SideNavList from './SideNavList';
 
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import {MuiThemeProvider, createMuiTheme} from '@material-ui/core/styles';
 
 const themes = createMuiTheme({
 	typography: {
@@ -57,9 +57,8 @@ const useStyles = makeStyles((theme) => ({
 	},
 	drawerPaper: {
 		width: drawerWidth,
-		background: 'rgb(2,0,36)',
-		background:
-			'linear-gradient(180deg, rgba(0,0,0,1) 67%, rgba(57,161,28,1) 96%, rgba(27,94,48,1) 100%)',
+		backgroundColor: 'rgb(2,0,36)',
+		background: 'linear-gradient(180deg, rgba(0,4,29,1) 67%, rgba(57,161,28,1) 96%, rgba(27,94,48,1) 100%)',
 		color: '#39a11c',
 	},
 	drawerHeader: {
@@ -97,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function SideBarNav({ children }) {
+export default function SideBarNav({children}) {
 	const classes = useStyles();
 	const theme = useTheme();
 	const [open, setOpen] = React.useState(false);
@@ -122,17 +121,11 @@ export default function SideBarNav({ children }) {
 					id='navBG'
 				>
 					<Toolbar>
-						<IconButton
-							color='inherit'
-							aria-label='open drawer'
-							onClick={handleDrawerOpen}
-							edge='start'
-							className={clsx(classes.menuButton, open && classes.hide)}
-						>
+						<IconButton color='inherit' aria-label='open drawer' onClick={handleDrawerOpen} edge='start' className={clsx(classes.menuButton, open && classes.hide)}>
 							<MenuIcon className={classes.navText} />
 						</IconButton>
 						<Typography variant='h6' noWrap className={classes.navText}>
-							Green's Junk Removal
+							Green's Junk Removal and Demolition Service
 						</Typography>
 					</Toolbar>
 				</AppBar>
@@ -146,20 +139,10 @@ export default function SideBarNav({ children }) {
 					}}
 				>
 					<div className={classes.drawerHeader}>
-						<IconButton onClick={handleDrawerClose}>
-							{theme.direction === 'ltr' ? (
-								<ChevronLeftIcon />
-							) : (
-								<ChevronRightIcon />
-							)}
-						</IconButton>
+						<IconButton onClick={handleDrawerClose}>{theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}</IconButton>
 					</div>
 					<Divider />
-					<img
-						src={Logo}
-						className={classes.logo}
-						alt='Greens Junk Removal Logo'
-					/>
+					<img src={Logo} className={classes.logo} alt='Greens Junk Removal Logo' />
 					<Divider />
 					<SideNavList />
 				</Drawer>
@@ -174,79 +157,3 @@ export default function SideBarNav({ children }) {
 		</MuiThemeProvider>
 	);
 }
-
-// import React, {useState} from 'react';
-// import {Link} from 'react-router-dom';
-// import {Nav, Button} from 'reactstrap';
-// import Vert from '../../assets/images/vert.svg';
-// import Close from '../../assets/images/close.svg';
-
-// import Logo from '../../assets/images/greenslogo.png';
-
-// import './SideBarNav.css';
-
-// const Header = (props) => {
-// 	const [state, setState] = React.useState({
-// 		top: false,
-// 		left: false,
-// 		bottom: false,
-// 		right: false,
-// 	});
-
-// 	const toggleDrawer = (anchor, open) => (event) => {
-// 		if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-// 			return;
-// 		}
-
-// 		setState({...state, [anchor]: open});
-// 	};
-
-// 	const [isOpen, setIsOpen] = useState(true);
-
-// 	const toggle = () => {
-// 		setIsOpen(!isOpen);
-// 	};
-
-// 	const SideMenu = (anchor) => (
-// 		<div className='wrapper'>
-// 			<Nav id='sidebar' className='active'>
-// 				<div className='sidebar-header'>
-// 					<img src={Logo} alt='Greens Junk Removal Logo' />
-// 				</div>
-
-// 				<ul className='list-unstyled components'>
-// 					<li className='active'>
-// 						<Link to='/'>Home</Link>
-// 					</li>
-// 					<li>
-// 						<Link to='/about'>About Us</Link>
-// 					</li>
-// 					<li>
-// 						<Link to='/services'>Services</Link>
-// 					</li>
-// 					<li>
-// 						<Link to='/contact'>Contact Us</Link>
-// 					</li>
-// 				</ul>
-// 			</Nav>
-// 		</div>
-// 	);
-
-// 	return (
-// 		<div id='content'>
-// 			<Button onClick={toggle} type='button' id='sidebarCollapse' className='navbar-btn'>
-// 				Click
-// 			</Button>
-// 			{['left', 'right', 'top', 'bottom'].map((anchor) => (
-// 				<React.Fragment key={anchor}>
-// 					<Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-// 					<div anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
-// 						{SideMenu(anchor)}
-// 					</div>
-// 				</React.Fragment>
-// 			))}
-// 		</div>
-// 	);
-// };
-
-// export default Header;
