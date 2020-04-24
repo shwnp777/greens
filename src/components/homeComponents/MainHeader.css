@@ -16,13 +16,25 @@
 
 	#headerH3 {
 		font-size: 2.5rem !important;
+		margin-bottom: 10px;
 	}
 	#headerH6 {
 		font-size: 1.5rem !important;
 		margin-top: 0px;
+		margin-bottom: 100px;
 	}
 	#greenGuy {
 		margin-top: 0px;
+	}
+	#emailButton {
+		display: none;
+	}
+	#textButton {
+		display: block;
+	}
+
+	#gridMargin {
+		margin-top: 100px;
 	}
 }
 
@@ -31,4 +43,17 @@
 		left: 50% !important;
 		bottom: -12px !important;
 	}
+}
+
+@media only screen and (min-width: 769px) {
+	#emailButton {
+		display: block;
+	}
+	#textButton {
+		display: none;
+	}
+}
+
+a {
+	text-decoration: none;
 }

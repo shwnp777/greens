@@ -3,7 +3,7 @@ import {makeStyles} from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import MainHeader from '../homeComponents/MainHeader';
 
-import './MainHeader.css';
+import './IconGrid.css';
 
 import Fair from '../../assets/images/Fair.png';
 import Fast from '../../assets/images/fast.png';
@@ -28,17 +28,17 @@ const IconGrid = () => {
 	return (
 		<Grid container spacing={3}>
 			<MainHeader />
-			<Grid item xs={12} md={4}>
+			<Grid id='icons' item xs={12} md={4}>
 				<div className={classes.iconDiv}>
 					<img className={classes.icon} src={Fast} alt='Fast Icon for Greens Junk Removal' />
 				</div>
 			</Grid>
-			<Grid item xs={12} md={4}>
+			<Grid id='icons' item xs={12} md={4}>
 				<div className={classes.iconDiv}>
 					<img className={classes.icon2} src={Reliable} alt='Reliable Icon for Greens Junk Removal' />
 				</div>
 			</Grid>
-			<Grid item xs={12} md={4}>
+			<Grid id='icons' item xs={12} md={4}>
 				<div className={classes.iconDiv}>
 					<img className={classes.icon} src={Fair} alt='Fair Icon for Greens Junk Removal' />
 				</div>

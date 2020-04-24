@@ -12,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
 	},
-	gridOver: {},
 	paper: {
 		padding: theme.spacing(2),
 		textAlign: 'center',
@@ -61,7 +60,7 @@ const MainHeader = () => {
 	const classes = useStyles();
 	return (
 		<Grid item xs={12}>
-			<div className={classes.gridOver}>
+			<div id='gridMargin' className={classes.gridOver}>
 				<Paper id='headerImg' className={classes.paper}>
 					<h3 id='headerH3' className={classes.headerH3}>
 						Knowledgeable and Experienced
@@ -69,9 +68,16 @@ const MainHeader = () => {
 					<h6 id='headerH6' className={classes.headerH6}>
 						Best Junk Removal Service in the DMV
 					</h6>
-					<Button variant='contained' className={classes.headerBTN}>
-						Text to Quote
-					</Button>
+					<a href='sms:+14104492217&body=Hi%20Green%2C%20I%20would%20like%20to%20get%20a%20quote%20for..%20'>
+						<Button id='textButton' variant='contained' className={classes.headerBTN}>
+							Text for Quote
+						</Button>
+					</a>
+					<a href='mailto:chris@suddennorth.com?Subject=I%20need%20a%20Quote'>
+						<Button id='emailButton' variant='contained' className={classes.headerBTN}>
+							Email for Quote
+						</Button>
+					</a>
 					<div id='greenGuy' className={classes.greenGuy}>
 						<img id='greenGuyIMG' className={classes.greenGuyImg} src={greenGuy} alt='Greens Junk Removal Guy' />
 					</div>

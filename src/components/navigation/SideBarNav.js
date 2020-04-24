@@ -125,7 +125,7 @@ export default function SideBarNav({children}) {
 							<MenuIcon className={classes.navText} />
 						</IconButton>
 						<Typography variant='h6' noWrap className={classes.navText}>
-							Green's Junk Removal and Demolition Service
+							Green's Junk Removal Service
 						</Typography>
 					</Toolbar>
 				</AppBar>
