@@ -1,0 +1,101 @@
+.blackBG1 {
+	z-index: 2000;
+	background-color: rgb(0, 0, 0);
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(64, 64, 64, 1) 91%
+	);
+	height: 100px;
+	width: 100%;
+	border-radius: 3px;
+	text-align: center;
+	display: grid;
+	align-content: center;
+	border: 10px solid #fff;
+	margin-top: 10px;
+}
+
+.contactTitle {
+	color: #39a11c;
+	font-size: 2.6rem;
+}
+
+.mapBGDiv {
+	height: 100%;
+	background-image: url('../../assets/images/map.png'); /* The image used */
+	background-color: #cccccc; /* Used if the image is unavailable */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	border: 10px solid #fff;
+}
+
+.formdiv {
+	width: 400px;
+	padding: 10px;
+	max-width: 95%;
+	border-radius: 5px;
+	margin: 5% auto;
+	background-color: rgba(255, 255, 255, 0.812);
+}
+
+::placeholder {
+	color: #fff !important;
+}
+
+.contactBTN {
+	background-color: #39a11c !important;
+	margin: 10px !important;
+}
+.contactBTN:hover {
+	background-color: #7fcc6a !important;
+	margin: 10px !important;
+}
+
+.MuiButton-label {
+	font-size: 1.2rem;
+}
+
+.purpleBG {
+	background-color: rgb(82, 0, 138);
+	background: linear-gradient(
+		90deg,
+		rgba(82, 0, 138, 1) 0%,
+		rgb(119, 13, 155) 91%
+	);
+	padding: 10px 10px;
+	width: 100%;
+	color: #fff;
+	border: 10px solid #fff;
+	bottom: 0;
+}
+
+.bangerDiv {
+	display: flex;
+	justify-content: center;
+}
+
+.infoText {
+	margin-left: 10px;
+	display: grid;
+	align-content: center;
+}
+
+.infoText p,
+h6 {
+	margin: 0;
+}
+
+.infoText h6 {
+	font-size: 1.6rem;
+}
+.infoText p {
+	font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.mapBGDiv {
+		height: 100vh;
+	}
+}

@@ -1,7 +1,6 @@
 import React from 'react';
-import {makeStyles} from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import MainHeader from '../homeComponents/MainHeader';
 
 import './IconGrid.css';
 
@@ -14,35 +13,60 @@ const useStyles = makeStyles((theme) => ({
 		width: '100%',
 	},
 	icon: {
-		width: '95%',
-		maxWidth: '200px',
+		width: '100px',
 	},
 	icon2: {
-		width: '95%',
-		maxWidth: '300px',
+		width: '150px',
+	},
+	gridIconDivT: {
+		width: '100%',
+		marginTop: '30px',
+	},
+	gridIconDivB: {
+		width: '100%',
+		marginBottom: '30px',
+	},
+	centerGrid: {
+		textAlign: 'center',
 	},
 }));
 
 const IconGrid = () => {
 	const classes = useStyles();
 	return (
-		<Grid container spacing={3}>
-			<MainHeader />
-			<Grid id='icons' item xs={12} md={4}>
+		<Grid className={classes.centerGrid} container spacing={3}>
+			<div className={classes.gridIconDivT}></div>
+			<Grid id='icons' item xs={4} md={4}>
 				<div className={classes.iconDiv}>
-					<img className={classes.icon} src={Fast} alt='Fast Icon for Greens Junk Removal' />
+					<img
+						id='icon1'
+						className={classes.icon}
+						src={Fast}
+						alt='Fast Icon for Greens Junk Removal'
+					/>
 				</div>
 			</Grid>
-			<Grid id='icons' item xs={12} md={4}>
+			<Grid id='icons' item xs={4} md={4}>
 				<div className={classes.iconDiv}>
-					<img className={classes.icon2} src={Reliable} alt='Reliable Icon for Greens Junk Removal' />
+					<img
+						id='icon2'
+						className={classes.icon2}
+						src={Reliable}
+						alt='Reliable Icon for Greens Junk Removal'
+					/>
 				</div>
 			</Grid>
-			<Grid id='icons' item xs={12} md={4}>
+			<Grid id='icons' item xs={4} md={4}>
 				<div className={classes.iconDiv}>
-					<img className={classes.icon} src={Fair} alt='Fair Icon for Greens Junk Removal' />
+					<img
+						id='icon3'
+						className={classes.icon}
+						src={Fair}
+						alt='Fair Icon for Greens Junk Removal'
+					/>
 				</div>
 			</Grid>
+			<div className={classes.gridIconDivB}></div>
 		</Grid>
 	);
 };

@@ -8,6 +8,13 @@
 	text-align: left;
 }
 
+@media only screen and (max-width: 802px) and (min-width: 768px) {
+	#greenGuyIMG {
+		left: 50%;
+		bottom: 25px;
+	}
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 	.divBody {
@@ -36,24 +43,60 @@
 	#gridMargin {
 		margin-top: 100px;
 	}
+	#greenGuyIMG {
+		width: 300px;
+		margin-bottom: -240px;
+	}
 }
 
 @media only screen and (min-width: 864px) {
 	#greenGuyIMG {
-		left: 50% !important;
-		bottom: -12px !important;
+		left: 50%;
+		bottom: -25px;
 	}
 }
 
 @media only screen and (min-width: 769px) {
 	#emailButton {
 		display: block;
+		position: absolute;
+		margin-top: 60px;
 	}
 	#textButton {
 		display: none;
 	}
 }
 
+@media screen and (max-width: 862px) and (min-width: 805px) {
+	#greenGuyIMG {
+		left: 50%;
+		bottom: -55px !important;
+	}
+}
+
 a {
 	text-decoration: none;
+}
+
+@media screen and (min-width: 558px) {
+	#greenGuyIMG {
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 558px) and (min-width: 416px) {
+	#greenGuyIMG {
+		margin-bottom: -200px;
+	}
+}
+
+@media screen and (max-width: 558px) and (min-width: 416px) {
+	#greenGuyIMG {
+		margin-bottom: -200px;
+	}
+}
+@media screen and (max-width: 415px) {
+	#greenGuyIMG {
+		margin-bottom: -180px !important;
+	}
 }

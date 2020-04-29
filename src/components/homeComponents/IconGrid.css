@@ -2,3 +2,15 @@
 	display: grid !important;
 	align-content: center !important;
 }
+
+@media only screen and (max-width: 572px) {
+	#icon1 {
+		width: 75px;
+	}
+	#icon2 {
+		width: 100px;
+	}
+	#icon3 {
+		width: 75px;
+	}
+}

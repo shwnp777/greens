@@ -1,0 +1,139 @@
+.blackBG {
+	position: inherit !important;
+	z-index: 2000;
+	background-color: rgb(0, 0, 0);
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(64, 64, 64, 1) 91%
+	);
+	height: 100px;
+	width: 100%;
+	border-radius: 3px;
+	text-align: center;
+	display: grid;
+	align-content: center;
+	border: 10px solid #fff;
+	margin-top: 10px;
+}
+
+.contactTitle {
+	color: #39a11c;
+	font-size: 2.6rem;
+}
+
+.firstServiceBox {
+	text-align: center;
+	padding: 10px;
+}
+
+.nojudge {
+	display: block;
+	margin: 0 auto;
+	width: 300px;
+}
+.nojudge img {
+	width: 250px;
+}
+
+.serviceBox {
+	padding: 10%;
+}
+
+.serviceBoxGrid {
+}
+
+.serviceBox1 {
+	border: 4px solid black;
+	padding: 5%;
+	background-color: #ffffff;
+}
+
+.boxTitle {
+	background-color: #fae296;
+	border: 3px solid black;
+	font-size: 1.4rem;
+	text-align: center;
+	-webkit-box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
+	box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.boxTitle h3 {
+	padding: 10px;
+	margin: 0;
+}
+
+.topGridImg {
+	width: 100%;
+}
+
+.topImgGrid {
+	display: grid;
+	align-content: center;
+	padding: 5px;
+}
+
+.serviceBTN {
+	background-color: #39a11c !important;
+	color: #fff !important;
+	font-size: 1.2rem !important;
+	margin-left: 40px !important;
+	margin-top: -30px !important;
+	padding: 10px 30px !important;
+	border: 3px solid black !important;
+}
+
+.serviceBTN:hover {
+	background-color: #45b127 !important;
+	border: none !important;
+}
+
+.emailBTN {
+	display: block !important;
+	margin: 0 auto !important;
+}
+.textBTN {
+	display: none !important;
+}
+
+.textQuote {
+	width: 100%;
+	text-align: center;
+	padding: 30px;
+}
+
+.secondRowDiv {
+	width: 100%;
+}
+.secondCenter {
+	display: block;
+	margin: 0 auto;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	.emailBTN {
+		display: none !important;
+	}
+	.textBTN {
+		display: block !important;
+		margin: 0 auto !important;
+	}
+}
+
+.serviceList ul {
+	display: inline-block;
+}
+
+.serviceList {
+	font-size: 1.3rem;
+}
+
+.serviceBox1 {
+	min-height: 400px;
+}
+
+.ulServe {
+	margin-top: 0px;
+}

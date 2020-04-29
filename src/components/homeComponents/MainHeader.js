@@ -1,5 +1,5 @@
 import React from 'react';
-import {makeStyles} from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
@@ -7,13 +7,13 @@ import Button from '@material-ui/core/Button';
 import greenGuy from '../../assets/images/greenGuy.png';
 
 import './MainHeader.css';
+import { Container } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
 	},
 	paper: {
-		padding: theme.spacing(2),
 		textAlign: 'center',
 		color: theme.palette.text.secondary,
 		overflow: 'hidden',
@@ -46,12 +46,10 @@ const useStyles = makeStyles((theme) => ({
 		width: 'auto',
 		height: '500px',
 		postion: 'absolute',
-		marginTop: '-100px',
 	},
 	greenGuyImg: {
-		width: '400px',
 		position: 'relative',
-		left: '30%',
+		left: '20%',
 		bottom: '10px',
 	},
 }));
@@ -59,31 +57,46 @@ const useStyles = makeStyles((theme) => ({
 const MainHeader = () => {
 	const classes = useStyles();
 	return (
-		<Grid item xs={12}>
-			<div id='gridMargin' className={classes.gridOver}>
-				<Paper id='headerImg' className={classes.paper}>
-					<h3 id='headerH3' className={classes.headerH3}>
-						Knowledgeable and Experienced
-					</h3>
-					<h6 id='headerH6' className={classes.headerH6}>
-						Best Junk Removal Service in the DMV
-					</h6>
-					<a href='sms:+14104492217&body=Hi%20Green%2C%20I%20would%20like%20to%20get%20a%20quote%20for..%20'>
-						<Button id='textButton' variant='contained' className={classes.headerBTN}>
-							Text for Quote
-						</Button>
-					</a>
-					<a href='mailto:chris@suddennorth.com?Subject=I%20need%20a%20Quote'>
-						<Button id='emailButton' variant='contained' className={classes.headerBTN}>
-							Email for Quote
-						</Button>
-					</a>
-					<div id='greenGuy' className={classes.greenGuy}>
-						<img id='greenGuyIMG' className={classes.greenGuyImg} src={greenGuy} alt='Greens Junk Removal Guy' />
-					</div>
-				</Paper>
-			</div>
-		</Grid>
+		<Container className=''>
+			<Grid item xs={12}>
+				<div id='gridMargin' className={classes.gridOver}>
+					<Paper id='headerImg' className={classes.paper}>
+						<h3 id='headerH3' className={classes.headerH3}>
+							Knowledgeable and Experienced
+						</h3>
+						<h6 id='headerH6' className={classes.headerH6}>
+							Best Junk Removal Service in the DMV
+						</h6>
+						<a href='sms:+14104492217&body=Hi%20Green%2C%20I%20would%20like%20to%20get%20a%20quote%20for..%20'>
+							<Button
+								id='textButton'
+								variant='contained'
+								className={classes.headerBTN}
+							>
+								Text for Quote
+							</Button>
+						</a>
+						<a href='mailto:chris@suddennorth.com?Subject=I%20need%20a%20Quote'>
+							<Button
+								id='emailButton'
+								variant='contained'
+								className={classes.headerBTN}
+							>
+								Email for Quote
+							</Button>
+						</a>
+						<div id='greenGuy' className={classes.greenGuy}>
+							<img
+								id='greenGuyIMG'
+								className={classes.greenGuyImg}
+								src={greenGuy}
+								alt='Greens Junk Removal Guy'
+							/>
+						</div>
+					</Paper>
+				</div>
+			</Grid>
+		</Container>
 	);
 };
 
