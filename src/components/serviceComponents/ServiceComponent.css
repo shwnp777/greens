@@ -120,6 +120,19 @@
 		display: block !important;
 		margin: 0 auto !important;
 	}
+	.serviceBox1 {
+		min-height: auto !important;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 472px) {
+	.topUL {
+		margin-bottom: 0px;
+	}
+	.bottomUL {
+		margin-top: -25px;
+	}
 }
 
 .serviceList ul {

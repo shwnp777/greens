@@ -24,6 +24,9 @@
 	#contBG {
 		padding-top: 10px !important;
 	}
+	.homeBody {
+		margin-top: 20px;
+	}
 }
 
 .MuiContainer-root {

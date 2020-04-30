@@ -21,7 +21,7 @@ const FirstRow = () => {
 							<h3>Common Removal Items</h3>
 						</div>
 						<div className='serviceList'>
-							<ul>
+							<ul className='topUL'>
 								<li>
 									<p>Electronics</p>
 								</li>
@@ -35,7 +35,7 @@ const FirstRow = () => {
 									<p>Carpet</p>
 								</li>
 							</ul>
-							<ul>
+							<ul className='bottomUL'>
 								<li>
 									<p>DIY Debris</p>
 								</li>
@@ -82,7 +82,7 @@ const FirstRow = () => {
 							<h3>Basement/Garage Cleanout</h3>
 						</div>
 						<div className='serviceList'>
-							<ul>
+							<ul className='topUL'>
 								<li>
 									<p>Goodwill</p>
 								</li>
@@ -96,7 +96,7 @@ const FirstRow = () => {
 									<p>Local Shelters</p>
 								</li>
 							</ul>
-							<ul>
+							<ul className='bottomUL'>
 								<li>
 									<p>Goodwill</p>
 								</li>

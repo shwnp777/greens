@@ -29,8 +29,13 @@ const HeaderGrid = () => {
 							/>
 						</div>
 						<div className='textQuote'>
-							<Button className='textBTN serviceBTN'>Text for Quote</Button>
-							<Button className='emailBTN serviceBTN'>Email for Quote</Button>
+							<a href="sms:+14104492217?&body=Hello%20Green's..%20I%20need%20a%20quote%20for...">
+								<Button className='textBTN serviceBTN'>Text for Quote</Button>
+							</a>
+
+							<a href='mailto:chris@suddennorth.com?&Subject=I%20need%20a%20Quote'>
+								<Button className='emailBTN serviceBTN'>Email for Quote</Button>
+							</a>
 						</div>
 					</div>
 				</Grid>

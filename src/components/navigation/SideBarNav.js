@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import {makeStyles, useTheme} from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
@@ -17,7 +17,7 @@ import './SideBarNav.css';
 import MainLayout from '../layout/MainLayout';
 import SideNavList from './SideNavList';
 
-import {MuiThemeProvider, createMuiTheme} from '@material-ui/core/styles';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 const themes = createMuiTheme({
 	typography: {
@@ -58,7 +58,8 @@ const useStyles = makeStyles((theme) => ({
 	drawerPaper: {
 		width: drawerWidth,
 		backgroundColor: 'rgb(2,0,36)',
-		background: 'linear-gradient(180deg, rgba(0,4,29,1) 67%, rgba(57,161,28,1) 96%, rgba(27,94,48,1) 100%)',
+		background:
+			'linear-gradient(180deg, rgba(0,0,0,1) 67%, rgba(57,161,28,1) 96%, rgba(27,94,48,1) 100%)',
 		color: '#39a11c',
 	},
 	drawerHeader: {
@@ -96,7 +97,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function SideBarNav({children}) {
+export default function SideBarNav({ children }) {
 	const classes = useStyles();
 	const theme = useTheme();
 	const [open, setOpen] = React.useState(false);
@@ -121,7 +122,13 @@ export default function SideBarNav({children}) {
 					id='navBG'
 				>
 					<Toolbar>
-						<IconButton color='inherit' aria-label='open drawer' onClick={handleDrawerOpen} edge='start' className={clsx(classes.menuButton, open && classes.hide)}>
+						<IconButton
+							color='inherit'
+							aria-label='open drawer'
+							onClick={handleDrawerOpen}
+							edge='start'
+							className={clsx(classes.menuButton, open && classes.hide)}
+						>
 							<MenuIcon className={classes.navText} />
 						</IconButton>
 						<Typography variant='h6' noWrap className={classes.navText}>
@@ -139,10 +146,20 @@ export default function SideBarNav({children}) {
 					}}
 				>
 					<div className={classes.drawerHeader}>
-						<IconButton onClick={handleDrawerClose}>{theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}</IconButton>
+						<IconButton onClick={handleDrawerClose}>
+							{theme.direction === 'ltr' ? (
+								<ChevronLeftIcon />
+							) : (
+								<ChevronRightIcon />
+							)}
+						</IconButton>
 					</div>
 					<Divider />
-					<img src={Logo} className={classes.logo} alt='Greens Junk Removal Logo' />
+					<img
+						src={Logo}
+						className={classes.logo}
+						alt='Greens Junk Removal Logo'
+					/>
 					<Divider />
 					<SideNavList />
 				</Drawer>
