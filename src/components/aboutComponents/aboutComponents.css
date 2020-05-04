@@ -16,10 +16,6 @@
 	border: 10px solid #fff;
 }
 
-::placeholder {
-	color: #fff !important;
-}
-
 .contactBTN {
 	background-color: #39a11c !important;
 	margin: 10px !important;
@@ -31,11 +27,6 @@
 
 .MuiButton-label {
 	font-size: 1.2rem;
-}
-
-.bangerDiv {
-	display: flex;
-	justify-content: center;
 }
 
 .infoText {
@@ -84,7 +75,7 @@ h6 {
 }
 
 .mainGrid {
-	height: 700px;
+	height: 550px;
 
 	padding: 10px;
 }

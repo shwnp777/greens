@@ -22,9 +22,9 @@
 }
 
 .mapBGDiv {
-	height: 100%;
-	background-image: url('../../assets/images/map.png'); /* The image used */
+	background-image: url('../../assets/images/lights2.jpg'); /* The image used */
 	background-color: #cccccc; /* Used if the image is unavailable */
+
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
 	background-size: cover; /* Resize the background image to cover the entire container */
@@ -37,11 +37,15 @@
 	max-width: 95%;
 	border-radius: 5px;
 	margin: 5% auto;
-	background-color: rgba(255, 255, 255, 0.812);
+	background-color: rgba(255, 255, 255, 0.312);
 }
 
 ::placeholder {
 	color: #fff !important;
+}
+
+.MuiOutlinedInput-root {
+	background-color: rgba(255, 255, 255, 0.259);
 }
 
 .contactBTN {
@@ -69,6 +73,7 @@
 	color: #fff;
 	border: 10px solid #fff;
 	bottom: 0;
+	letter-spacing: 2px;
 }
 
 .bangerDiv {
@@ -98,4 +103,18 @@ h6 {
 	.mapBGDiv {
 		height: 100vh;
 	}
+}
+
+@media only screen and (max-width: 568px) {
+	.bangerDiv {
+		display: inline-flex;
+		margin-left: 25px;
+	}
+	.formdiv {
+		margin: 19% auto 0px auto;
+	}
+}
+
+::placeholder {
+	color: #000000 !important;
 }

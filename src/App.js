@@ -5,6 +5,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Reviews from './pages/Reviews';
+import Test from './pages/Test';
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 				<Route exact path='/services' component={Services} />
 				<Route exact path='/contact' component={Contact} />
 				<Route exact path='/reviews' component={Reviews} />
+				<Route exact path='/test' component={Test} />
 			</Switch>
 		</Router>
 	);
