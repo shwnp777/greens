@@ -103,6 +103,10 @@ h6 {
 	.mapBGDiv {
 		height: 100vh;
 	}
+	.purpleBG {
+		position: static;
+		bottom: 0;
+	}
 }
 
 @media only screen and (max-width: 568px) {

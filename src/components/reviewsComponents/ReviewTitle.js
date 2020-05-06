@@ -6,7 +6,7 @@ const ReviewTitle = () => {
 	return (
 		<div className='mainTitleAbout'>
 			<div className='blackBG'>
-				<h1 className='contactTitle'>Reviews Page</h1>
+				<h1 className='contactTitle'>Reviews</h1>
 			</div>
 		</div>
 	);

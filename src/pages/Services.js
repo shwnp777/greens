@@ -4,6 +4,7 @@ import Title from '../components/serviceComponents/ServicesTitle';
 import HeaderGrid from '../components/serviceComponents/HeaderGrid';
 import FirstRow from '../components/serviceComponents/FirstRow';
 import SecondRow from '../components/serviceComponents/SecondRow';
+import BottomNav from '../components/serviceComponents/BottomNav';
 
 const Services = () => {
 	return (
@@ -14,6 +15,7 @@ const Services = () => {
 				<HeaderGrid />
 				<FirstRow />
 				<SecondRow />
+				<BottomNav />
 			</div>
 		</SideBarNav>
 	);

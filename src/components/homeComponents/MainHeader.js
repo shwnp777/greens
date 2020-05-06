@@ -67,7 +67,7 @@ const MainHeader = () => {
 						<h6 id='headerH6' className={classes.headerH6}>
 							Best Junk Removal Service in the DMV
 						</h6>
-						<a href='sms:+14104492217?&body=Hi%20Green%2C%20I%20would%20like%20to%20get%20a%20quote%20for..%20'>
+						<a href='sms:+14432213242?&body=Hi%20Green%2C%20I%20would%20like%20to%20get%20a%20quote%20for..%20'>
 							<Button
 								id='textButton'
 								variant='contained'
@@ -76,7 +76,7 @@ const MainHeader = () => {
 								Text for Quote
 							</Button>
 						</a>
-						<a href='mailto:chris@suddennorth.com?&Subject=I%20need%20a%20Quote'>
+						<a href='mailto:enricogreen42@gmail.com?&Subject=I%20need%20a%20Quote'>
 							<Button
 								id='emailButton'
 								variant='contained'

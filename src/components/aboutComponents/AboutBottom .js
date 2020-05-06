@@ -22,9 +22,6 @@ const useStyles = makeStyles((theme) => ({
 			'linear-gradient(30deg, rgba(0,0,0,0) 24%, rgba(57,161,28,.4) 51%, rgba(0,0,0,0) 76%)',
 		padding: '10px',
 	},
-	bottomH3: {
-		fontSize: '2.9rem',
-	},
 }));
 
 const AboutBottom = () => {
@@ -37,7 +34,7 @@ const AboutBottom = () => {
 						<img src={Bang1} alt='' />
 					</div>
 					<div className={classes.bottomTitle}>
-						<h3 className={classes.bottomH3}>ON TIME AND FAST REMOVAL</h3>
+						<h3 className='bottomH3'>ON TIME AND FAST REMOVAL</h3>
 					</div>
 				</div>
 			</Grid>
@@ -47,7 +44,7 @@ const AboutBottom = () => {
 						<img src={Bang2} alt='' />
 					</div>
 					<div className={classes.bottomTitle}>
-						<h3 className={classes.bottomH3}>SAFE AND KNOWLEDGEABLE</h3>
+						<h3 className='bottomH3'>SAFE AND KNOWLEDGEABLE</h3>
 					</div>
 				</div>
 			</Grid>
@@ -57,7 +54,7 @@ const AboutBottom = () => {
 						<img src={Bang3} alt='' />
 					</div>
 					<div className={classes.bottomTitle}>
-						<h3 className={classes.bottomH3}>UPFRONT PRICING</h3>
+						<h3 className='bottomH3'>UPFRONT PRICING</h3>
 					</div>
 				</div>
 			</Grid>

@@ -46,7 +46,7 @@ const FirstRow = () => {
 									<p>Decks</p>
 								</li>
 								<li>
-									<p>Hot Tube</p>
+									<p>Hot Tub</p>
 								</li>
 							</ul>
 						</div>
@@ -60,16 +60,16 @@ const FirstRow = () => {
 						<div className='serviceList'>
 							<ul>
 								<li>
-									<p>Goodwill</p>
+									<p>Construction Demo</p>
 								</li>
 								<li>
-									<p>Salvation Army</p>
+									<p>Office Furniture</p>
 								</li>
 								<li>
-									<p>Habitat for Humanity</p>
+									<p>Office Equipment</p>
 								</li>
 								<li>
-									<p>Local Shelters</p>
+									<p>Cubicle Removal</p>
 								</li>
 							</ul>
 						</div>
@@ -84,30 +84,30 @@ const FirstRow = () => {
 						<div className='serviceList'>
 							<ul className='topUL'>
 								<li>
-									<p>Goodwill</p>
+									<p>Hot Water Heaters</p>
 								</li>
 								<li>
-									<p>Salvation Army</p>
+									<p>Washer and Dryers</p>
 								</li>
 								<li>
-									<p>Habitat for Humanity</p>
+									<p>Exercise Equipment</p>
 								</li>
 								<li>
-									<p>Local Shelters</p>
+									<p>Broken Tools</p>
 								</li>
 							</ul>
 							<ul className='bottomUL'>
 								<li>
-									<p>Goodwill</p>
+									<p>Old Trash Cans</p>
 								</li>
 								<li>
-									<p>Salvation Army</p>
+									<p>Pool Tables</p>
 								</li>
 								<li>
-									<p>Habitat for Humanity</p>
+									<p>Furniture</p>
 								</li>
 								<li>
-									<p>Local Shelters</p>
+									<p>Rehab Debris</p>
 								</li>
 							</ul>
 						</div>

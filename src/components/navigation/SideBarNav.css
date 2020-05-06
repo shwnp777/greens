@@ -46,3 +46,12 @@ header#navBG {
 .list-unstyled a {
 	text-decoration: none !important;
 }
+
+.numberClick {
+	text-align: center;
+}
+
+.numberClick a {
+	color: #fefb28;
+	font-size: 1.4rem;
+}

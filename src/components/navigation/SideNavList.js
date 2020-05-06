@@ -27,6 +27,9 @@ const SideNavList = () => {
 					<li>Contact Us</li>
 				</NavLink>
 			</ul>
+			<div className='numberClick'>
+				<a href='tel:443-221-3242'>(443) 221-3242</a>
+			</div>
 		</div>
 	);
 };

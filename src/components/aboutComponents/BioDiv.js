@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 		border: '4px solid black',
 		width: '300px',
 		display: 'block',
-		margin: '5px auto',
+		margin: '20px auto',
 	},
 	bioPhoto: {
 		width: '200px',

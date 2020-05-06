@@ -57,6 +57,7 @@ body {
 	-moz-box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
 	box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
 	width: 180px;
+	letter-spacing: 2px;
 }
 
 .platformName {
@@ -136,4 +137,14 @@ body {
 	.share {
 		margin-top: 0px;
 	}
+}
+
+.reviewFooter a {
+	font-size: 1.8rem;
+	letter-spacing: 2px;
+	color: #ffffff;
+	margin-left: 15px;
+}
+.reviewFooter a:hover {
+	color: #2ba367;
 }

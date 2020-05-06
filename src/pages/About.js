@@ -12,6 +12,8 @@ import './pages.css';
 const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
+		marginBottom: '30px',
+		height: '100%',
 	},
 }));
 
@@ -22,10 +24,12 @@ const About = () => {
 			<div className='divBody divBody2' style={{ paddingTop: '120px' }}>
 				<Title />
 				<div className='bioPadding'>
-					<Grid className={classes.root} container>
-						<BioDiv />
-						<MissionDiv />
-					</Grid>
+					<div className='marginAbout'>
+						<Grid className={classes.root} container>
+							<BioDiv />
+							<MissionDiv />
+						</Grid>
+					</div>
 					<AboutBottom />
 				</div>
 			</div>

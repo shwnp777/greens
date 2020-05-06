@@ -5,7 +5,7 @@ export const ReviewFooter = () => {
 		<div className='reviewFooter'>
 			<h3>
 				Don’t wait –no job to big or small –call green’s junk removal today
-				443-221-3242
+				<a href='tel:443-221-3242'>(443) 221-3242</a>
 			</h3>
 		</div>
 	);
